@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@100;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-text {
+  color: #DCF10D;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin: 0.5rem;
+  padding-left: 85px;
+}
+
+.Dashboard {
+  height: 84px;
+  width: 100%;
+  background-color: #192140;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0%;
+  display: flex;
+  list-style: none;
+  padding-right: 60px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display: block;
+  list-style: none;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.navbar-links .Blog-text a {
+  color: #DCF10D;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.navbar-links li:hover {
+  background-color: #1d274d;
+}
+
+.navbar-links .Signup-text a {
+  color: #9D9DB5;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 16px */
+  letter-spacing: -0.16px;
+}
+
+.navbar-links .Login-text a {
+  display: flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 40px;
+  border: 1px solid #0266FF;
+  color: #0266FF;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 16px */
+  letter-spacing: -0.16px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #0266FF;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .navbar-links ul {
+    padding-right: 0%;
+  }
+}
+@media (max-width: 800px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .Dashboard {
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links .Login-text a {
+    margin: 10px;
+  }
+  .logo-text {
+    padding-left: 15px;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
+}/*# sourceMappingURL=navbar.css.map */
